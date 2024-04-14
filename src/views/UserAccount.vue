@@ -4,8 +4,8 @@
 
 <template>
   <main>
-    HomeBeforeLink
+    UserAccountBeforeLink
     <RouterLink to="/user-form">User Form</RouterLink>
-    HomeAfterLink
+    UserAccountBeforeLink
   </main>
 </template>
