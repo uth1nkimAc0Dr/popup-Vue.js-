@@ -5,19 +5,18 @@
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <!-- <UserForm msg="You did it!" /> -->
-      <!-- ЭТО ПРИМЕР ПРОПСА. ТЫ БУДЕШЬ ИСПОЛЬЗОВАТЬ ЭТО ПРИ ПЕРЕХОДЕ С ЮЗЕР ФОРМ В ЮЗЕРЛИСТ -->
+  <div>
+    <header>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/user-form">About</RouterLink>
         <RouterLink to="/user-account">My account</RouterLink>
       </nav>
-    </div>
-  </header>
-
-  <RouterView />
+    </header>
+    <main class="container">
+      <RouterView />
+    </main>
+  </div>
 </template>
 
 <style scoped>
@@ -31,12 +30,21 @@ nav {
   background-color: #00e6e6;
   padding: 10px;
 }
+.container {
+  width: 1200px;
+  margin: 10px auto;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
 nav a.router-link-exact-active {
   font-weight: bold;
-  /* text-decoration: none; */
   color: hsla(160, 100%, 37%, 1);
 
   /* transition: 0.4s; */
   /* padding: 3px; */
 }
+
+/* без скоопед */
 </style>
